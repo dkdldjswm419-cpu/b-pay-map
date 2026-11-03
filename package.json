@@ -1,0 +1,13 @@
+{
+  "name": "b-pay-map",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "도로명·동이름·지명을 입력하면 그 구획의 식당을 오픈스트리트맵에 표시하고 비플페이 가능 여부를 모두와 공유하는 지도",
+  "scripts": {
+    "dev": "node dev-server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

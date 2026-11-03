@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>비플페이 지도</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>비플페이 지도</h1>
+    <form id="search-form">
+      <input id="query" type="text" placeholder="예: 을지로 근처 한식집 찾기, 명동, 성수동" autocomplete="off" required>
+      <button type="submit">검색</button>
+    </form>
+    <div id="summary"></div>
+  </header>
+
+  <nav id="filters" hidden></nav>
+
+  <main>
+    <div id="map"></div>
+    <aside id="list-panel">
+      <div class="legend">
+        <span><i class="dot yes"></i>비플페이 가능</span>
+        <span><i class="dot no"></i>불가능</span>
+        <span><i class="dot unknown"></i>미확인</span>
+      </div>
+      <ul id="place-list"></ul>
+    </aside>
+  </main>
+
+  <div id="message" hidden></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
